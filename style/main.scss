@@ -1,0 +1,158 @@
+$green: hsl(163, 72%, 41%);
+$red: hsl(356, 69%, 56%);
+$facebook: hsl(208, 92%, 53%);
+$twitter: hsl(203, 89%, 53%);
+$instagram: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+$youTube: hsl(348, 97%, 39%);
+$toggle-gradient: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+$toggle: hsl(230, 22%, 74%);
+
+// dark theme
+$darkBackground: hsl(230, 17%, 14%);
+$darkTopBackground: hsl(232, 19%, 15%);
+$darkBlue: hsl(228, 28%, 20%);
+$darkTextBlue: hsl(228, 34%, 66%);
+
+// light theme
+$lightBackground: hsl(0, 0%, 100%);
+$lightTopBackground: hsl(225, 100%, 98%);
+$lightBlue: hsl(228, 12%, 44%);
+$lightVeryDark: hsl(230, 17%, 14%);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter";
+  font-size: 14px;
+}
+
+.container {
+  padding: 2% 8%;
+  color: $lightVeryDark;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  p {
+    color: $lightBlue;
+    font-weight: 700;
+  }
+}
+
+.boxes {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px 20px;
+  .box {
+    background: $lightTopBackground;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .big-box {
+    cursor: pointer;
+    text-align: center;
+    h1 {
+      margin: 10px;
+      font-size: 14px;
+      color: $lightBlue;
+    }
+    h3 {
+      font-size: 50px;
+      margin: 10px;
+      color: $lightVeryDark;
+    }
+    h5 {
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: $lightBlue;
+      letter-spacing: 5px;
+      margin: 10px;
+    }
+    p {
+      color: $green;
+      margin: 10px;
+    }
+    .name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .min-box {
+    cursor: pointer;
+    text-align: left;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 {
+      font-size: 16px;
+      margin: 10px;
+      color: $lightBlue;
+    }
+    h2 {
+      font-size: 50px;
+      margin-left: 10px;
+    }
+    p {
+      float: right;
+      position: relative;
+      top: -30px;
+    }
+    #red {
+      color: $red;
+    }
+    #green {
+      color: $green;
+    }
+  }
+}
+
+.fas {
+  margin: 5px;
+}
+.big-box:nth-child(1) {
+  border-top: 5px solid $facebook;
+}
+.big-box:nth-child(2) {
+  border-top: 5px solid $twitter;
+}
+.big-box:nth-child(3) {
+  border-top: 5px solid;
+  border-image: $instagram;
+  border-image-slice: 1;
+}
+.big-box:nth-child(4) {
+  border-top: 5px solid $youTube;
+}
+.mid-text {
+  position: relative;
+  top: 30px;
+  color: $lightBlue;
+}
+
+.fab {
+  font-size: 25px;
+}
+#facebook {
+  color: $facebook;
+}
+#twitter {
+  color: $twitter;
+}
+#instagram {
+  position: relative;
+  background: $instagram;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#youtube {
+  color: $youTube;
+}
