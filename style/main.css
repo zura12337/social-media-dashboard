@@ -226,4 +226,29 @@ body {
 #darkMode:checked::before {
   left: 24px;
 }
+
+.text-dark {
+  color: white;
+}
+
+.body-dark {
+  background: #1e202a;
+}
+
+.box-dark {
+  background: #1f212e !important;
+  color: #fff;
+}
+
+.box-dark h3 {
+  color: #fff !important;
+}
+
+.box-dark h1 {
+  color: #8b97c6 !important;
+}
+
+.dark-mid-text {
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */

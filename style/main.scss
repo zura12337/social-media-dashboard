@@ -197,3 +197,24 @@ body {
 #darkMode:checked::before {
   left: 24px;
 }
+
+.text-dark {
+  color: white;
+}
+
+.body-dark {
+  background: $darkBackground;
+}
+.box-dark {
+  background: $darkTopBackground !important;
+  color: #fff;
+  h3 {
+    color: #fff !important;
+  }
+  h1 {
+    color: $darkTextBlue !important;
+  }
+}
+.dark-mid-text {
+  color: white;
+}
