@@ -1,8 +1,13 @@
 # Frontend Mentor - Social media dashboard with theme switcher
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/88959e09-85ab-4467-9294-e91de3622d55/deploy-status)](https://app.netlify.com/sites/happy-thompson-26d32b/deploys)
+
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
+
+
 ## Welcome! 👋
+
 
 Thanks for checking out this front-end coding challenge.
 
